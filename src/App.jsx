@@ -48,7 +48,7 @@ function App() {
           <p className="temperature">{weatherData.temperature}°</p>
           <div className="info-icon-container">
             <img
-              src={`/icons/${weatherData.iconId}.svg`}
+              src={`https://samisassi8.github.io/weather/icons/${weatherData.iconId}.svg`}
               alt="weather icon"
               className="info-icon"
             />
