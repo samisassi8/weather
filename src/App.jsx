@@ -9,7 +9,7 @@ function App() {
   const [errorInfo, setErrorInfo] = useState(null);
 
   useEffect(() => {
-    fetch(`http://api.airvisual.com/v2/nearest_city?key=${APIKEY}`)
+    fetch(`https://api.airvisual.com/v2/nearest_city?key=${APIKEY}`)
       .then((response) => {
         console.log(response);
         // pour gerer les erreurs
