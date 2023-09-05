@@ -13,6 +13,7 @@ body {
 }
 
 main {
+  display: flex;
   max-width: 375px;
   min-height: 380px;
   margin: 100px auto 0;
@@ -23,14 +24,18 @@ main {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
   position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader-container {
   background-color: #f1f1f1;
   position: absolute;
   z-index: 10;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   width: 100%;
   height: 100%;
